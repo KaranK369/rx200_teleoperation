@@ -1,0 +1,22 @@
+Visualization Manager:
+  Class: "rviz::VisualizationManager"
+  Displays:
+    - Class: "rviz_default_plugins/RobotModel"
+      Enabled: true
+      Name: "Robot Model"
+      Description Topic: "/robot_description"
+      Robot Description: "robot_description"
+    - Class: "rviz_default_plugins/TF"
+      Enabled: true
+      Name: "TF"
+      Show Names: true
+      Show Axes: true
+    - Class: "rviz_default_plugins/PlanningScene"
+      Enabled: true
+      Name: "Planning Scene"
+      Scene Topic: "/move_group/monitored_planning_scene"
+    - Class: "rviz_default_plugins/InteractiveMarkers"
+      Enabled: true
+      Name: "Interactive Markers"
+      Update Topic: "/rviz/moveit/update"
+
